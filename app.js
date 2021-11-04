@@ -8,6 +8,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var addmodRouter = require('./routes/addmod');
 var hillRouter = require('./routes/hill');
+var selectorRouter = require('./routes/selector');
+
 
 
 
@@ -27,6 +29,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/addmod', addmodRouter);
 app.use('/hill', hillRouter);
+app.use('/selector', selectorRouter);
+
 
 
 // catch 404 and forward to error handler
